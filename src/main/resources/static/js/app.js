@@ -20,6 +20,10 @@ $(".upperCase").on("keypress", function () {
 
 });
 
+function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
 
 function validar_email( email ) 
 {

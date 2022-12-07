@@ -3,21 +3,16 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head th:replace="fragments/header :: head-catminer" />
 <body>
- 
+ 	<div  th:replace="fragments/Menu :: menu"></div>
  	<div id="wrapper">
-		<div  th:replace="fragments/Menu :: menu"></div>
+		<div  th:replace="fragments/usuarioPanel :: usuarioPanel"></div>
+		<section id="content">
+		
+				<h1><b>OPCIONES<b></b></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nam illum excepturi recusandae soluta magni inventore odit sed libero tenetur asperiores aspernatur similique vitae assumenda voluptas earum, cumque voluptatibus laboriosam!</p>
+		</section>
 	</div>
-	
-	<div>
-		<input id="menuPrincipal" type="hidden" th:value="${menuPrincipal}" />
-		<input id="menuActivo" type="hidden" th:value="${menuActivo}" />
-	</div>
-	<div th:replace="${view} :: content" >En este lugar se reemplazara el contenido</div>
-	
-
-	<footer th:replace="fragments/footer :: footer"></footer>
-	
-	<div th:replace="${view} :: javascript"></div>
+	<div  th:replace="fragments/footerPanel :: footerPanel"></div>
 	
 
 </body>

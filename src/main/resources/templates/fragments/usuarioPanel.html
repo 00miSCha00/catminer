@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="usuarioPanel">
+	<div class="action">
+		<div class="profile" onclick="menuToggle();">
+			<img src="user.png" alt="">
+		</div>
+
+		<div class="menu">
+			<h3>
+				User Account
+				<div>Operational Team</div>
+			</h3>
+			<ul>
+				<li><span class="material-icons icons-size">person</span> <a
+					href="#">My Profile</a></li>
+				<li><span class="material-icons icons-size">mode</span> <a
+					href="#">Edit Account</a></li>
+				<li><span class="material-icons icons-size">insert_comment</span>
+					<a href="#">Comments</a></li>
+				<li><span class="material-icons icons-size">monetization_on</span>
+					<a href="#">Budget</a></li>
+				<li><span class="material-icons icons-size">account_balance</span>
+					<a href="#">Finance</a></li>
+				<li><span class="material-icons icons-size">account_balance_wallet</span>
+					<a href="#">Wallet</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</html>
